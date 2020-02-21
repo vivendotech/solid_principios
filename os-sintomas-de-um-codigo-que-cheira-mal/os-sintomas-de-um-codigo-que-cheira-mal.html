@@ -1,0 +1,95 @@
+<p>
+ Se você é programador a mais de uns dois anos você já deve ter percebido que um software com um bom banco de códigos faze toda a diferença. Provavelmente porque você já foi atrasado por um código ruim.[2] Geralmente no inicio do projeto o código é desenvolvido super rápido porém conforme o tempo passa ele começa a ser desenvolvido a passos de tartaruga. Isso acontece porque nenhuma mais mudança é trivial. A cada nova mudança implementada se quebra duas ou três partes do código. Nesta série sobre
+ <a href="http://www.professormarcolan.com.br/tag/refatoracao/" rel="noopener" target="_blank">
+  refatoração e boas práticas
+ </a>
+ de desenvolvimento começamos[2] discutindo
+ <a href="http://www.professormarcolan.com.br/valores-da-metodologia-agile/" rel="noopener" target="_blank">
+  sobre os valores de desenvolvimento Agile
+ </a>
+ . Nesse post iremos nos aprofundar nos sintomas de um código que cheira mal que irá ser apresentado quando ele estiver apodrecendo.
+</p>
+<h2>
+ O Sintoma da Rigidez
+</h2>
+<p>
+ O sintoma de que um software está rígido é percebido quando o sistema fica difícil de ser mudado, mesmo de uma forma simples. Em um designe rígido uma simples mudança gera uma cascata subsequentes de mudanças em módulos dependentes. A métrica geralmente usada para detectar rigidez é a quantidade de módulo que precisam ser mudados dado uma mudança de um módulo. [1]
+</p>
+<h2>
+ Sintoma da fragilidade
+</h2>
+<p>
+ O sintoma da fragilidade é encontrado quando uma mudança feita no código faz com que vários lugares diferentes do código parem de funcionar. Um fator agravante é quando os novos problemas aparecem em áreas diferentes da mudança. [1]
+</p>
+<h2>
+ Sintoma da Imobilidade
+</h2>
+<p>
+ O software apresenta o sintoma da imobilidade quando uma parte do código que pode ser movidas para ser utilizada em outra parte do código não é porque não pode ser movida. Geralmente não pode-se separar o código porque é muito arriscado.[1]
+</p>
+<h2>
+ Sintoma da Viscosidade
+</h2>
+<p>
+ O sintoma da viscosidade se apreenta de duas formas : viscosidade no software e viscosidade no ambiente. O sintoma da viscosidade no software é encontrado quando existe mais de uma forma de criar uma mudança. Uma das formas de criar mudanças é respeitando o designe e as outras alternativas não respeitão. Quando é mais facil fazer a mudança desrespeitando o desgine mais viscoso o designe é. [1]
+</p>
+<p>
+ A viscosidade dos ambientes de desenvolvimento se devem quando os ambientes de trabalho são lentos e ineficientes. Por exemplo, se um sistema leva um grande tempo para compilar os designer vão fazer mudanças que não levam tanto tempo para recompilar mesmo se essas mudanças não preservem o designe.[1]
+</p>
+<h2>
+ Complexidade desnecesária
+</h2>
+<p>
+ O software apresenta o sintoma da complexidade desnecessária quando o programador implementa facilidades e expansões do código para mudanças que ainda não foram necessárias. O problema acontece porque muitos planos de contigente são criados mas nunca usados. Geralmente o designe carrega um peso desses elementos desnecessários. Essa facilidades e expansões tornam o software mais complexo e difícil de entender.[1]
+</p>
+<h2>
+ Repetição desnecesária
+</h2>
+<p>
+ O sintoma da repetição desnecessária está atribuída a códigos redundantes no software. Quando um software possui códigos redundantes, modificar o sistema se torna uma tarefa mais arduosa. Bugs podem ser encontrado em uma repetição do código redundante e então deve ser encotnrado a cada repetição do código que pode ser um pouco diferente da repetição anterior. Assim o concerto pode ser que não seja o mesmo em cada repetição. O outro problema é decorrente é porque de desenvolvedores estão perdendo de fazer uma abstração.[1]
+</p>
+<h2>
+ Sintoma de opacidade
+</h2>
+<p>
+ O sintoma da opacidade está atrelado a tendencia que os códigos tem de se tornarem mais difíceis de entender. Os códigos podem ser escritos em uma forma clara e expressiva ou em uma forma opaca e enrolada. Codigos com o tempo tem a tendencia de se tornar mais opaco. Isso acontece porque os códigos recém desenvolvidos estão fresco na memória do programar. Com o passar do tempo ele vai esquecendo e o código vai se tornando opaco. Esse problema seria facilmente evitados se o desenvolvedor se coloca-se no lugar das pessoas que vão ler o seu código. Isso é uma boa prática porque em algum futuro essa pessoa pode ser você mesmo.
+</p>
+<h2>
+ As causas dos sintomas de um código que cheira mal
+</h2>
+<p>
+ Na verdade verdade existe várias práticas que podem prevenir os sintomas de um código que cheira mal. Mas para melhor entender as soluções iremos discutir as causas desses sintomas. Poste sua dúvida nos comentários. Para seguir as atualizações
+ <a href="https://www.youtube.com/channel/UC9eGq_4v1Uu14Uznsey-hOg" rel="noopener" target="_blank">
+  se inscreva no canal do youtube
+ </a>
+ e
+ <a href="https://www.facebook.com/professormarcolan/" rel="noopener" target="_blank">
+  nos siga no facebook. em @professormarcolan
+ </a>
+ .
+</p>
+<h2>
+ Bibliografia
+</h2>
+<table>
+ <tr>
+  <th>
+   [1]MARTIN, Robert C. Agile software development: principles, patterns, and practices. Prentice Hall, 2002.
+  </th>
+  <th>
+   <iframe frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&amp;OneJS=1&amp;Operation=GetAdHtml&amp;MarketPlace=BR&amp;source=ac&amp;ref=qf_sp_asin_til&amp;ad_type=product_link&amp;tracking_id=jmarcolan-20&amp;marketplace=amazon&amp;region=BR&amp;placement=0135974445&amp;asins=0135974445&amp;linkId=5b087b063be8b55ba91acba0a8660f52&amp;show_border=false&amp;link_opens_in_new_window=false&amp;price_color=333333&amp;title_color=0066c0&amp;bg_color=ffffff" style="width:120px;height:240px;">
+    <br/>
+   </iframe>
+  </th>
+ </tr>
+ <tr>
+  <th>
+   [3]MARTIN, Robert C. Clean code: a handbook of agile software craftsmanship. Pearson Education, 2009.
+  </th>
+  <th>
+   <iframe frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&amp;OneJS=1&amp;Operation=GetAdHtml&amp;MarketPlace=BR&amp;source=ac&amp;ref=qf_sp_asin_til&amp;ad_type=product_link&amp;tracking_id=jmarcolan-20&amp;marketplace=amazon&amp;region=BR&amp;placement=B001GSTOAM&amp;asins=B001GSTOAM&amp;linkId=916f769b3a972e16da38672c9c439a71&amp;show_border=false&amp;link_opens_in_new_window=false&amp;price_color=333333&amp;title_color=0066c0&amp;bg_color=ffffff" style="width:120px;height:240px;">
+    <br/>
+   </iframe>
+  </th>
+ </tr>
+</table>
